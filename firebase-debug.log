@@ -1,0 +1,53 @@
+[debug] [2024-09-02T23:56:08.264Z] ----------------------------------------------------------------------
+[debug] [2024-09-02T23:56:08.267Z] Command:       /opt/homebrew/Cellar/node/22.6.0/bin/node /opt/homebrew/bin/firebase projects:create sinarmas-msig
+[debug] [2024-09-02T23:56:08.267Z] CLI Version:   13.3.1
+[debug] [2024-09-02T23:56:08.268Z] Platform:      darwin
+[debug] [2024-09-02T23:56:08.268Z] Node Version:  v22.6.0
+[debug] [2024-09-02T23:56:08.268Z] Time:          Tue Sep 03 2024 06:56:08 GMT+0700 (Western Indonesia Time)
+[debug] [2024-09-02T23:56:08.268Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-02T23:56:08.269Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-02T23:56:08.290Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-02T23:56:08.290Z] > authorizing via signed-in user (dandyraspudi@gmail.com)
+[debug] [2024-09-02T23:56:08.992Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-09-02T23:56:08.992Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-09-02T23:56:22.802Z] > refreshing access token with scopes: []
+[debug] [2024-09-02T23:56:22.803Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-02T23:56:22.804Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-02T23:56:22.908Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-09-02T23:56:22.908Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-02T23:56:22.908Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-09-02T23:56:22.909Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"sinarmas-msig","name":"test"}
+[debug] [2024-09-02T23:56:23.948Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 401
+[debug] [2024-09-02T23:56:23.948Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.CreateProject","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-09-02T23:56:24.050Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-09-02T23:56:37.267Z] ----------------------------------------------------------------------
+[debug] [2024-09-02T23:56:37.268Z] Command:       /opt/homebrew/Cellar/node/22.6.0/bin/node /opt/homebrew/bin/firebase projects:create sinarmas-msig
+[debug] [2024-09-02T23:56:37.269Z] CLI Version:   13.3.1
+[debug] [2024-09-02T23:56:37.269Z] Platform:      darwin
+[debug] [2024-09-02T23:56:37.269Z] Node Version:  v22.6.0
+[debug] [2024-09-02T23:56:37.269Z] Time:          Tue Sep 03 2024 06:56:37 GMT+0700 (Western Indonesia Time)
+[debug] [2024-09-02T23:56:37.269Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-02T23:56:37.273Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-02T23:56:37.273Z] > authorizing via signed-in user (dandyraspudi@gmail.com)
+[debug] [2024-09-02T23:56:38.574Z] > refreshing access token with scopes: []
+[debug] [2024-09-02T23:56:38.576Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-02T23:56:38.576Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-02T23:56:38.785Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-09-02T23:56:38.785Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-02T23:56:38.785Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-09-02T23:56:38.785Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"sinarmas-msig","name":"sinarmas-msig"}
+[debug] [2024-09-02T23:56:39.848Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 401
+[debug] [2024-09-02T23:56:39.848Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.CreateProject","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-09-02T23:56:39.933Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.

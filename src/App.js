@@ -5,6 +5,7 @@ export default function App() {
   const [number, setNumber] = useState(0);
   const [result, setResult] = useState(0);
   const [message, setMessage] = useState('');
+  const [tes, setTest] = useState('');
 
   function handleInput() {
     //please put your logic here
